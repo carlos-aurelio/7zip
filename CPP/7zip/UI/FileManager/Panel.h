@@ -388,6 +388,7 @@ public:
   CSelectedState _selectedState;
   bool _thereAreDeletedItems;
   bool _markDeletedItems;
+  CObjectVector<NWindows::NFile::NDir::CTempDir> _tempDirectories;
 
   bool PanelCreated;
 

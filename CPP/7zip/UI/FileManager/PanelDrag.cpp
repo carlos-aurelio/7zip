@@ -331,7 +331,7 @@ void CPanel::OnDrag(LPNMLISTVIEW /* nmListView */)
 
   // FString dirPrefix2;
   FString dirPrefix;
-  CTempDir tempDirectory;
+  CTempDir& tempDirectory = _tempDirectories.AddNew();
 
   bool isFSFolder = IsFSFolder();
   if (isFSFolder)
